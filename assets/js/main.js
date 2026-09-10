@@ -53,17 +53,24 @@ function initParallax() {
     pagination(true, initParallax);
 })();
 
+
 (function () {
     var button = document.querySelector('[data-theme-toggle]');
     if (!button) return;
 
     var STORAGE_KEY = 'solo_theme_mode';
-    var NIGHT_COLOR = '#4B0082';
+    
+    // --- CONFIGURE YOUR NIGHT PALETTE HERE ---
+    var NIGHT_BG = '#111111';      // Dark background color
+    var NIGHT_ACCENT = '#70A5FF';  // Accent color in dark mode (links, buttons)
 
     var root = document.documentElement;
-    var lightColor = (getComputedStyle(root).getPropertyValue('--background-color') || '').trim();
-    if (!lightColor) lightColor = '#ffffff';
 
+    // 1. Capture the original light theme values set by Ghost Admin
+    var lightBg = (getComputedStyle(root).getPropertyValue('--background-color') || '').trim() || '#ffffff';
+    var lightAccent = (getComputedStyle(root).getPropertyValue('--ghost-accent-color') || '').trim() || '#15171A';
+
+    // Helper function to calculate if text should be white or black on this background
     function normalizeHex(hex) {
         if (!hex) return null;
         hex = hex.trim();
@@ -71,21 +78,21 @@ function initParallax() {
         if (hex.length === 3) {
             hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
         }
-        if (hex.length !== 6) return null;
-        return '#' + hex.toUpperCase();
+        return hex.length === 6 ? '#' + hex.toUpperCase() : null;
     }
 
-    function setContrastClassForColor(hexWithHash) {
-        var hex = normalizeHex(hexWithHash);
+    function updateTextContrast(bgHex) {
+        var hex = normalizeHex(bgHex);
         if (!hex) return;
 
-        var accentColor = hex.slice(1);
-        var r = parseInt(accentColor.substr(0, 2), 16);
-        var g = parseInt(accentColor.substr(2, 2), 16);
-        var b = parseInt(accentColor.substr(4, 2), 16);
+        var rawHex = hex.slice(1);
+        var r = parseInt(rawHex.substr(0, 2), 16);
+        var g = parseInt(rawHex.substr(2, 2), 16);
+        var b = parseInt(rawHex.substr(4, 2), 16);
         var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
-        var textColor = (yiq >= 128) ? 'dark' : 'light';
 
+        // Apply Ghost's contrast utility classes
+        var textColor = (yiq >= 128) ? 'dark' : 'light';
         root.classList.remove('has-dark-text', 'has-light-text');
         root.classList.add('has-' + textColor + '-text');
     }
@@ -94,32 +101,41 @@ function initParallax() {
 
     function applyMode(mode) {
         currentMode = mode;
+        var isNight = mode === 'night';
 
-        var nextColor = mode === 'night' ? NIGHT_COLOR : lightColor;
-        root.style.setProperty('--background-color', nextColor);
-        setContrastClassForColor(nextColor);
+        // Select the active colors
+        var activeBg = isNight ? NIGHT_BG : lightBg;
+        var activeAccent = isNight ? NIGHT_ACCENT : lightAccent;
 
-        button.setAttribute('aria-pressed', mode === 'night' ? 'true' : 'false');
+        // Apply CSS custom variables directly to :root
+        root.style.setProperty('--background-color', activeBg);
+        root.style.setProperty('--ghost-accent-color', activeAccent);
+
+        // Adjust text contrast classes so headings and body copy remain readable
+        updateTextContrast(activeBg);
+
+        // Update accessibility attributes
+        button.setAttribute('aria-pressed', isNight ? 'true' : 'false');
         button.dataset.themeMode = mode;
     }
 
+    // Load saved preference if it exists
     try {
         var saved = localStorage.getItem(STORAGE_KEY);
         if (saved === 'night' || saved === 'light') {
             currentMode = saved;
         }
     } catch (e) {
-        // ignore
+        // Fallback gracefully if localStorage is blocked
     }
 
     applyMode(currentMode);
 
     button.addEventListener('click', function () {
-        applyMode(currentMode === 'light' ? 'night' : 'light');
+        var nextMode = (currentMode === 'light') ? 'night' : 'light';
+        applyMode(nextMode);
         try {
-            localStorage.setItem(STORAGE_KEY, currentMode);
-        } catch (e) {
-            // ignore
-        }
+            localStorage.setItem(STORAGE_KEY, nextMode);
+        } catch (e) {}
     });
 })();
