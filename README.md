@@ -1,32 +1,39 @@
-# Solo
+# Reforge
 
 > [!IMPORTANT]
-> This repo is synced automatically with the [TryGhost/Themes](https://github.com/TryGhost/Themes) monorepo. If you're looking to contribute or raise an issue, head over to the main repository [TryGhost/Themes](https://github.com/TryGhost/Themes) where our official themes are developed.
+> Reforge is a fork/derivative of the official [TryGhost/Solo](https://github.com/TryGhost/Solo) theme for Ghost.
+> 
+> This fork is maintained in this repository—please open issues and pull requests here.
 
-Solo is a minimal theme for [Ghost](https://github.com/TryGhost/Ghost) focused on showcasing the work of an individual writer or creator. This theme is highly customizable, with a few simple settings that allow you to quickly apply your own personal style to your site.
+Reforge is an extendable Ghost theme for portfolio creators, technical writers, and developers.
+It’s designed to work for posts/pages (and future modules like news/update or podcast layouts) and includes theme settings + a built-in light/night mode toggle (dark mode).
 
-**Demo: https://solo.ghost.io**
+## Live Demo
+https://alfycodes.me
 
-# Instructions
+## Instructions
 
-1. [Download this theme](https://github.com/TryGhost/Solo/archive/main.zip)
-2. Log into Ghost, and go to the `Design` settings area to upload the zip file
+1. Download the theme zip:
+   - from the **Releases** section, or
+   - build it locally: `bun install && bun run zip`
+2. In Ghost Admin → **Design**, upload the zip file.
 
-# Development
+## Development
 
-Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/) and [Bun](https://bun.sh/) installed. After that, from the theme's root directory:
+Styles are compiled using Gulp/PostCSS to polyfill future CSS spec.
+You’ll need [Bun](https://bun.sh/) installed.
+
+From the theme's root directory:
 
 ```bash
-# Install
-bun install
-
 # Run build & watch for changes
+bun install
 bun run dev
 ```
 
-Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
+Now you can edit `/assets/css/` files (and other source files like `/assets/js/` and `*.hbs`); the build will regenerate outputs under `/assets/built/`.
 
-The `zip` Gulp task packages the theme files into `dist/solo.zip`, which you can then upload to your site.
+The `zip` Gulp task packages the theme files into `dist/<package-name>.zip` (based on `package.json#name`).
 
 ```bash
 bun run zip
@@ -36,6 +43,13 @@ bun run zip
 
 Please see the @Tryghost/Themes/theme-translations/README.md for how to edit or contribute translations.
 
-# Copyright & License
+## Credits
 
-Copyright (c) 2013-2026 Ghost Foundation - Released under the [MIT license](LICENSE).
+- Based on [TryGhost/Solo](https://github.com/TryGhost/Solo) by Ghost Foundation.
+- Built for [Ghost](https://github.com/TryGhost/Ghost).
+
+## Copyright & License
+
+Copyright (c) 2013-2026 Ghost Foundation — Released under the [MIT license](LICENSE).
+
+Modifications by Nanamein (https://alfycodes.me) — see [MODIFICATIONS.md](MODIFICATIONS.md) — Released under the MIT license (see LICENSE).
