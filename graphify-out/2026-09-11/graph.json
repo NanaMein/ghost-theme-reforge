@@ -63,7 +63,7 @@
       "file_type": "code",
       "norm_label": "csswatcher()",
       "source_file": "gulpfile.js",
-      "source_location": "L113"
+      "source_location": "L111"
     },
     {
       "id": "gulpfile_getjsfiles",
@@ -111,7 +111,7 @@
       "file_type": "code",
       "norm_label": "hbswatcher()",
       "source_file": "gulpfile.js",
-      "source_location": "L112"
+      "source_location": "L110"
     },
     {
       "id": "gulpfile_jswatcher",
@@ -123,7 +123,7 @@
       "file_type": "code",
       "norm_label": "jswatcher()",
       "source_file": "gulpfile.js",
-      "source_location": "L114"
+      "source_location": "L112"
     },
     {
       "id": "gulpfile_locales",
@@ -135,7 +135,7 @@
       "file_type": "code",
       "norm_label": "locales()",
       "source_file": "gulpfile.js",
-      "source_location": "L104"
+      "source_location": "L102"
     },
     {
       "id": "gulpfile_localeswatcher",
@@ -147,7 +147,7 @@
       "file_type": "code",
       "norm_label": "localeswatcher()",
       "source_file": "gulpfile.js",
-      "source_location": "L111"
+      "source_location": "L109"
     },
     {
       "id": "gulpfile_serve",
@@ -1405,7 +1405,7 @@
       "file_type": "code",
       "norm_label": "build",
       "source_file": "gulpfile.js",
-      "source_location": "L116"
+      "source_location": "L114"
     },
     {
       "id": "gulpfile_concat",
@@ -1559,7 +1559,7 @@
       "file_type": "code",
       "norm_label": "watcher",
       "source_file": "gulpfile.js",
-      "source_location": "L115"
+      "source_location": "L113"
     },
     {
       "id": "gulpfile_zip",
@@ -1782,167 +1782,6 @@
       "source_location": "L4"
     },
     {
-      "id": "agents",
-      "label": "AGENTS.md",
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "Solo theme (Ghost) \u2014 OpenCode agent notes",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "agents.md",
-      "source_file": "AGENTS.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "agents_build_inputs_outputs_don_t_edit_generated_files",
-      "label": "Build inputs/outputs (don\u2019t edit generated files)",
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "Solo theme (Ghost) \u2014 OpenCode agent notes",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "build inputs/outputs (don\u2019t edit generated files)",
-      "source_file": "AGENTS.md",
-      "source_location": "L9"
-    },
-    {
-      "id": "agents_commands_bun_only",
-      "label": "Commands (bun only)",
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "Solo theme (Ghost) \u2014 OpenCode agent notes",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "commands (bun only)",
-      "source_file": "AGENTS.md",
-      "source_location": "L3"
-    },
-    {
-      "id": "agents_graphify",
-      "label": "graphify",
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "Solo theme (Ghost) \u2014 OpenCode agent notes",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "graphify",
-      "source_file": "AGENTS.md",
-      "source_location": "L20"
-    },
-    {
-      "id": "agents_packaging",
-      "label": "Packaging",
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "Solo theme (Ghost) \u2014 OpenCode agent notes",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "packaging",
-      "source_file": "AGENTS.md",
-      "source_location": "L17"
-    },
-    {
-      "id": "agents_solo_theme_ghost_opencode_agent_notes",
-      "label": "Solo theme (Ghost) \u2014 OpenCode agent notes",
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "Solo theme (Ghost) \u2014 OpenCode agent notes",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "solo theme (ghost) \u2014 opencode agent notes",
-      "source_file": "AGENTS.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "agents_templates_locales_quirks",
-      "label": "Templates/locales quirks",
-      "_origin": "ast",
-      "community": 15,
-      "community_name": "Solo theme (Ghost) \u2014 OpenCode agent notes",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "templates/locales quirks",
-      "source_file": "AGENTS.md",
-      "source_location": "L13"
-    },
-    {
-      "id": "package_custom_navigation_layout",
-      "label": "navigation_layout",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "navigation_layout",
-      "file_type": "code",
-      "norm_label": "navigation_layout",
-      "source_file": "package.json",
-      "source_location": "L49"
-    },
-    {
-      "id": "package_navigation_layout_default",
-      "label": "default",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "navigation_layout",
-      "file_type": "code",
-      "norm_label": "default",
-      "source_file": "package.json",
-      "source_location": "L52"
-    },
-    {
-      "id": "package_navigation_layout_options",
-      "label": "options",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "navigation_layout",
-      "file_type": "code",
-      "norm_label": "options",
-      "source_file": "package.json",
-      "source_location": "L51"
-    },
-    {
-      "id": "package_navigation_layout_type",
-      "label": "type",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "navigation_layout",
-      "file_type": "code",
-      "norm_label": "type",
-      "source_file": "package.json",
-      "source_location": "L50"
-    },
-    {
-      "id": "ref_logo_in_the_middle",
-      "label": "Logo in the middle",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "navigation_layout",
-      "file_type": "concept",
-      "norm_label": "logo in the middle",
-      "source_file": "package.json",
-      "source_location": "L51"
-    },
-    {
-      "id": "ref_logo_on_the_left",
-      "label": "Logo on the left",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "navigation_layout",
-      "file_type": "concept",
-      "norm_label": "logo on the left",
-      "source_file": "package.json",
-      "source_location": "L51"
-    },
-    {
-      "id": "ref_stacked",
-      "label": "Stacked",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "navigation_layout",
-      "file_type": "concept",
-      "norm_label": "stacked",
-      "source_file": "package.json",
-      "source_location": "L51"
-    },
-    {
       "id": "assets_built_main_min",
       "label": "main.min.js",
       "_origin": "ast",
@@ -2009,15 +1848,15 @@
       "source_location": "L59"
     },
     {
-      "id": "package_custom_header_section_layout",
-      "label": "header_section_layout",
+      "id": "package_custom_navigation_layout",
+      "label": "navigation_layout",
       "_origin": "ast",
       "community": 3,
       "community_name": "custom",
       "file_type": "code",
-      "norm_label": "header_section_layout",
+      "norm_label": "navigation_layout",
       "source_file": "package.json",
-      "source_location": "L62"
+      "source_location": "L49"
     },
     {
       "id": "package_custom_primary_header",
@@ -2064,7 +1903,7 @@
       "source_location": "L60"
     },
     {
-      "id": "package_header_section_layout_default",
+      "id": "package_navigation_layout_default",
       "label": "default",
       "_origin": "ast",
       "community": 3,
@@ -2072,21 +1911,10 @@
       "file_type": "code",
       "norm_label": "default",
       "source_file": "package.json",
-      "source_location": "L65"
+      "source_location": "L52"
     },
     {
-      "id": "package_header_section_layout_group",
-      "label": "group",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "custom",
-      "file_type": "code",
-      "norm_label": "group",
-      "source_file": "package.json",
-      "source_location": "L66"
-    },
-    {
-      "id": "package_header_section_layout_options",
+      "id": "package_navigation_layout_options",
       "label": "options",
       "_origin": "ast",
       "community": 3,
@@ -2094,10 +1922,10 @@
       "file_type": "code",
       "norm_label": "options",
       "source_file": "package.json",
-      "source_location": "L64"
+      "source_location": "L51"
     },
     {
-      "id": "package_header_section_layout_type",
+      "id": "package_navigation_layout_type",
       "label": "type",
       "_origin": "ast",
       "community": 3,
@@ -2105,7 +1933,7 @@
       "file_type": "code",
       "norm_label": "type",
       "source_file": "package.json",
-      "source_location": "L63"
+      "source_location": "L50"
     },
     {
       "id": "package_primary_header_default",
@@ -2229,15 +2057,26 @@
       "source_location": "L56"
     },
     {
-      "id": "ref_large_background",
-      "label": "Large background",
+      "id": "ref_logo_in_the_middle",
+      "label": "Logo in the middle",
       "_origin": "ast",
       "community": 3,
       "community_name": "custom",
       "file_type": "concept",
-      "norm_label": "large background",
+      "norm_label": "logo in the middle",
       "source_file": "package.json",
-      "source_location": "L64"
+      "source_location": "L51"
+    },
+    {
+      "id": "ref_logo_on_the_left",
+      "label": "Logo on the left",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "custom",
+      "file_type": "concept",
+      "norm_label": "logo on the left",
+      "source_file": "package.json",
+      "source_location": "L51"
     },
     {
       "id": "ref_modern_sans_serif",
@@ -2251,26 +2090,15 @@
       "source_location": "L56"
     },
     {
-      "id": "ref_side_by_side",
-      "label": "Side by side",
+      "id": "ref_stacked",
+      "label": "Stacked",
       "_origin": "ast",
       "community": 3,
       "community_name": "custom",
       "file_type": "concept",
-      "norm_label": "side by side",
+      "norm_label": "stacked",
       "source_file": "package.json",
-      "source_location": "L64"
-    },
-    {
-      "id": "ref_typographic_profile",
-      "label": "Typographic profile",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "custom",
-      "file_type": "concept",
-      "norm_label": "typographic profile",
-      "source_file": "package.json",
-      "source_location": "L64"
+      "source_location": "L51"
     },
     {
       "id": "package",
@@ -2988,148 +2816,92 @@
       "source_location": "L40"
     },
     {
-      "id": "modifications",
-      "label": "MODIFICATIONS.md",
+      "id": "package_custom_header_section_layout",
+      "label": "header_section_layout",
       "_origin": "ast",
       "community": 9,
-      "community_name": "Reforge",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "modifications.md",
-      "source_file": "MODIFICATIONS.md",
-      "source_location": "L1"
+      "community_name": "header_section_layout",
+      "file_type": "code",
+      "norm_label": "header_section_layout",
+      "source_file": "package.json",
+      "source_location": "L62"
     },
     {
-      "id": "modifications_modifications_extensions",
-      "label": "Modifications / extensions",
+      "id": "package_header_section_layout_default",
+      "label": "default",
       "_origin": "ast",
       "community": 9,
-      "community_name": "Reforge",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "modifications / extensions",
-      "source_file": "MODIFICATIONS.md",
-      "source_location": "L9"
+      "community_name": "header_section_layout",
+      "file_type": "code",
+      "norm_label": "default",
+      "source_file": "package.json",
+      "source_location": "L65"
     },
     {
-      "id": "modifications_original_work",
-      "label": "Original work",
+      "id": "package_header_section_layout_group",
+      "label": "group",
       "_origin": "ast",
       "community": 9,
-      "community_name": "Reforge",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "original work",
-      "source_file": "MODIFICATIONS.md",
-      "source_location": "L5"
+      "community_name": "header_section_layout",
+      "file_type": "code",
+      "norm_label": "group",
+      "source_file": "package.json",
+      "source_location": "L66"
     },
     {
-      "id": "modifications_reforge_modifications_attribution",
-      "label": "Reforge - Modifications / Attribution",
+      "id": "package_header_section_layout_options",
+      "label": "options",
       "_origin": "ast",
       "community": 9,
-      "community_name": "Reforge",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "reforge - modifications / attribution",
-      "source_file": "MODIFICATIONS.md",
-      "source_location": "L1"
+      "community_name": "header_section_layout",
+      "file_type": "code",
+      "norm_label": "options",
+      "source_file": "package.json",
+      "source_location": "L64"
     },
     {
-      "id": "readme",
-      "label": "README.md",
+      "id": "package_header_section_layout_type",
+      "label": "type",
       "_origin": "ast",
       "community": 9,
-      "community_name": "Reforge",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "readme.md",
-      "source_file": "README.md",
-      "source_location": "L1"
+      "community_name": "header_section_layout",
+      "file_type": "code",
+      "norm_label": "type",
+      "source_file": "package.json",
+      "source_location": "L63"
     },
     {
-      "id": "readme_copyright_license",
-      "label": "Copyright & License",
+      "id": "ref_large_background",
+      "label": "Large background",
       "_origin": "ast",
       "community": 9,
-      "community_name": "Reforge",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "copyright & license",
-      "source_file": "README.md",
-      "source_location": "L51"
+      "community_name": "header_section_layout",
+      "file_type": "concept",
+      "norm_label": "large background",
+      "source_file": "package.json",
+      "source_location": "L64"
     },
     {
-      "id": "readme_credits",
-      "label": "Credits",
+      "id": "ref_side_by_side",
+      "label": "Side by side",
       "_origin": "ast",
       "community": 9,
-      "community_name": "Reforge",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "credits",
-      "source_file": "README.md",
-      "source_location": "L46"
+      "community_name": "header_section_layout",
+      "file_type": "concept",
+      "norm_label": "side by side",
+      "source_file": "package.json",
+      "source_location": "L64"
     },
     {
-      "id": "readme_development",
-      "label": "Development",
+      "id": "ref_typographic_profile",
+      "label": "Typographic profile",
       "_origin": "ast",
       "community": 9,
-      "community_name": "Reforge",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "development",
-      "source_file": "README.md",
-      "source_location": "L21"
-    },
-    {
-      "id": "readme_instructions",
-      "label": "Instructions",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "Reforge",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "instructions",
-      "source_file": "README.md",
-      "source_location": "L14"
-    },
-    {
-      "id": "readme_live_demo",
-      "label": "Live Demo",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "Reforge",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "live demo",
-      "source_file": "README.md",
-      "source_location": "L11"
-    },
-    {
-      "id": "readme_reforge",
-      "label": "Reforge",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "Reforge",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "reforge",
-      "source_file": "README.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "readme_theme_translations",
-      "label": "Theme translations",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "Reforge",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "theme translations",
-      "source_file": "README.md",
-      "source_location": "L42"
+      "community_name": "header_section_layout",
+      "file_type": "concept",
+      "norm_label": "typographic profile",
+      "source_file": "package.json",
+      "source_location": "L64"
     }
   ],
   "links": [
@@ -3795,18 +3567,6 @@
     },
     {
       "source": "gulpfile_zipper",
-      "target": "gulpfile_handleerror",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "gulpfile.js",
-      "source_location": "L101",
-      "weight": 1.0
-    },
-    {
-      "source": "gulpfile_zipper",
       "target": "gulpfile_pump",
       "relation": "calls",
       "_origin": "ast",
@@ -3815,6 +3575,18 @@
       "context": "call",
       "source_file": "gulpfile.js",
       "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "gulpfile_zipper",
+      "target": "gulpfile_handleerror",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "gulpfile.js",
+      "source_location": "L99",
       "weight": 1.0
     },
     {
@@ -4382,72 +4154,6 @@
       "weight": 1.0
     },
     {
-      "source": "agents",
-      "target": "agents_solo_theme_ghost_opencode_agent_notes",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "agents_solo_theme_ghost_opencode_agent_notes",
-      "target": "agents_templates_locales_quirks",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "L13",
-      "weight": 1.0
-    },
-    {
-      "source": "agents_solo_theme_ghost_opencode_agent_notes",
-      "target": "agents_packaging",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "L17",
-      "weight": 1.0
-    },
-    {
-      "source": "agents_solo_theme_ghost_opencode_agent_notes",
-      "target": "agents_graphify",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "L20",
-      "weight": 1.0
-    },
-    {
-      "source": "agents_solo_theme_ghost_opencode_agent_notes",
-      "target": "agents_commands_bun_only",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "agents_solo_theme_ghost_opencode_agent_notes",
-      "target": "agents_build_inputs_outputs_don_t_edit_generated_files",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "L9",
-      "weight": 1.0
-    },
-    {
       "source": "assets_built_main_min",
       "target": "assets_built_main_min_a",
       "relation": "contains",
@@ -4851,7 +4557,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "gulpfile.js",
-      "source_location": "L115",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -4862,7 +4568,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "gulpfile.js",
-      "source_location": "L116",
+      "source_location": "L114",
       "weight": 1.0
     },
     {
@@ -4994,39 +4700,6 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "gulpfile.js",
-      "source_location": "L9",
-      "weight": 1.0
-    },
-    {
-      "source": "modifications",
-      "target": "modifications_reforge_modifications_attribution",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "MODIFICATIONS.md",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "modifications_reforge_modifications_attribution",
-      "target": "modifications_original_work",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "MODIFICATIONS.md",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "modifications_reforge_modifications_attribution",
-      "target": "modifications_modifications_extensions",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "MODIFICATIONS.md",
       "source_location": "L9",
       "weight": 1.0
     },
@@ -6032,83 +5705,6 @@
       "weight": 1.0
     },
     {
-      "source": "readme",
-      "target": "readme_reforge",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "readme_development",
-      "target": "readme_theme_translations",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L42",
-      "weight": 1.0
-    },
-    {
-      "source": "readme_reforge",
-      "target": "readme_live_demo",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
-      "source": "readme_reforge",
-      "target": "readme_instructions",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L14",
-      "weight": 1.0
-    },
-    {
-      "source": "readme_reforge",
-      "target": "readme_development",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L21",
-      "weight": 1.0
-    },
-    {
-      "source": "readme_reforge",
-      "target": "readme_credits",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L46",
-      "weight": 1.0
-    },
-    {
-      "source": "readme_reforge",
-      "target": "readme_copyright_license",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L51",
-      "weight": 1.0
-    },
-    {
       "source": "tsconfig",
       "target": "tsconfig_compileroptions",
       "relation": "contains",
@@ -6670,17 +6266,6 @@
       "weight": 1.0
     },
     {
-      "source": "readme",
-      "target": "modifications",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L55",
-      "weight": 1.0
-    },
-    {
       "source": "assets_built_main_min",
       "target": "assets_built_main_min_initparallax",
       "relation": "indirect_call",
@@ -6753,30 +6338,6 @@
       "weight": 1.0
     },
     {
-      "source": "assets_built_main_min_n",
-      "target": "assets_js_lib_jarallax_min_m",
-      "relation": "indirect_call",
-      "_origin": "ast",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "context": "argument",
-      "source_file": "assets/built/main.min.js",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "assets_built_main_min_r",
-      "target": "assets_js_lib_jarallax_min_m",
-      "relation": "indirect_call",
-      "_origin": "ast",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "context": "argument",
-      "source_file": "assets/built/main.min.js",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
       "source": "assets_built_main_min_s",
       "target": "assets_built_main_min_i",
       "relation": "indirect_call",
@@ -6815,18 +6376,6 @@
     {
       "source": "assets_built_main_min_s",
       "target": "assets_built_main_min_z_e",
-      "relation": "indirect_call",
-      "_origin": "ast",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "context": "argument",
-      "source_file": "assets/built/main.min.js",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "assets_built_main_min_s",
-      "target": "assets_js_lib_jarallax_min_m",
       "relation": "indirect_call",
       "_origin": "ast",
       "confidence": "INFERRED",
@@ -6893,7 +6442,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "gulpfile.js",
-      "source_location": "L115",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -6905,7 +6454,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "gulpfile.js",
-      "source_location": "L115",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -6917,7 +6466,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "gulpfile.js",
-      "source_location": "L115",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -6929,7 +6478,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "gulpfile.js",
-      "source_location": "L115",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -6941,7 +6490,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "gulpfile.js",
-      "source_location": "L116",
+      "source_location": "L114",
       "weight": 1.0
     },
     {
@@ -6953,7 +6502,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "gulpfile.js",
-      "source_location": "L116",
+      "source_location": "L114",
       "weight": 1.0
     },
     {
@@ -6965,7 +6514,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "gulpfile.js",
-      "source_location": "L119",
+      "source_location": "L117",
       "weight": 1.0
     },
     {
@@ -6977,7 +6526,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "gulpfile.js",
-      "source_location": "L120",
+      "source_location": "L118",
       "weight": 1.0
     },
     {
@@ -6989,7 +6538,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "gulpfile.js",
-      "source_location": "L113",
+      "source_location": "L111",
       "weight": 1.0
     },
     {
@@ -7001,7 +6550,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "gulpfile.js",
-      "source_location": "L112",
+      "source_location": "L110",
       "weight": 1.0
     },
     {
@@ -7013,7 +6562,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "gulpfile.js",
-      "source_location": "L111",
+      "source_location": "L109",
       "weight": 1.0
     },
     {
@@ -7030,5 +6579,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ad2152b86461c24df8b6a6411f4127ee04fc0fe3"
+  "built_at_commit": "0146d192e3aae5b0b52ca741e68f64efbf530410"
 }

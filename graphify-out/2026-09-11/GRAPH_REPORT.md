@@ -1,16 +1,15 @@
 # Graph Report - Solo_theme_codebase  (2026-09-11)
 
 ## Corpus Check
-- 28 files · ~12,516 words
-- Verdict: corpus is large enough that graph structure adds value.
+- cluster-only mode — file stats not available
 
 ## Summary
-- 275 nodes · 342 edges · 17 communities (15 shown, 2 thin omitted)
-- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 29 edges (avg confidence: 0.85)
+- 256 nodes · 322 edges · 15 communities (13 shown, 2 thin omitted)
+- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ad2152b8`
+- Built from commit: `0146d192`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -24,41 +23,33 @@
 - c
 - p
 - image_sizes
-- Reforge
+- header_section_layout
 - post_feed_layout
 - main.js
 - dependencies
 - opencode.json
 - graphify.js
-- Solo theme (Ghost) — OpenCode agent notes
-- navigation_layout
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 20 edges
 2. `c()` - 17 edges
 3. `p` - 16 edges
-4. `s()` - 14 edges
+4. `s()` - 13 edges
 5. `custom` - 9 edges
 6. `css()` - 8 edges
 7. `i()` - 7 edges
-8. `m()` - 7 edges
-9. `image_sizes` - 7 edges
-10. `Solo theme (Ghost) — OpenCode agent notes` - 6 edges
+8. `image_sizes` - 7 edges
+9. `handleError()` - 5 edges
+10. `hbs()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `s()` --indirect_call--> `m()`  [INFERRED]
-  assets/built/main.min.js → assets/js/lib/jarallax.min.js
-- `n()` --indirect_call--> `m()`  [INFERRED]
-  assets/built/main.min.js → assets/js/lib/jarallax.min.js
 - `l()` --indirect_call--> `a()`  [INFERRED]
   assets/js/lib/jarallax.min.js → assets/built/main.min.js
-- `r()` --indirect_call--> `m()`  [INFERRED]
-  assets/built/main.min.js → assets/js/lib/jarallax.min.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (17 total, 2 thin omitted)
+## Communities (15 total, 2 thin omitted)
 
 ### Community 0 - "devDependencies"
 Cohesion: 0.06
@@ -74,7 +65,7 @@ Nodes (14): a(), dropdown(), e(), i(), n(), o(), pagination(), r() (+6 more)
 
 ### Community 3 - "custom"
 Cohesion: 0.07
-Nodes (29): default, type, custom, background_color, footer_text, header_section_layout, primary_header, secondary_header (+21 more)
+Nodes (28): default, type, custom, background_color, footer_text, navigation_layout, primary_header, secondary_header (+20 more)
 
 ### Community 4 - "package.json"
 Cohesion: 0.08
@@ -92,9 +83,9 @@ Nodes (3): c(), lightbox(), s()
 Cohesion: 0.12
 Nodes (16): config, card_assets, image_sizes, posts_per_page, l, m, s, xl (+8 more)
 
-### Community 9 - "Reforge"
-Cohesion: 0.17
-Nodes (10): Modifications / extensions, Original work, Reforge - Modifications / Attribution, Copyright & License, Credits, Development, Instructions, Live Demo (+2 more)
+### Community 9 - "header_section_layout"
+Cohesion: 0.25
+Nodes (8): header_section_layout, default, group, options, type, Large background, Side by side, Typographic profile
 
 ### Community 10 - "post_feed_layout"
 Cohesion: 0.25
@@ -112,16 +103,8 @@ Nodes (3): @opencode-ai/plugin, dependencies, @opencode-ai/plugin
 Cohesion: 0.50
 Nodes (3): plugin, $schema, .opencode/plugins/graphify.js
 
-### Community 15 - "Solo theme (Ghost) — OpenCode agent notes"
-Cohesion: 0.29
-Nodes (6): Build inputs/outputs (don’t edit generated files), Commands (bun only), graphify, Packaging, Solo theme (Ghost) — OpenCode agent notes, Templates/locales quirks
-
-### Community 16 - "navigation_layout"
-Cohesion: 0.29
-Nodes (7): navigation_layout, default, options, type, Logo in the middle, Logo on the left, Stacked
-
 ## Knowledge Gaps
-- **120 isolated node(s):** `$schema`, `.opencode/plugins/graphify.js`, `@opencode-ai/plugin`, `{series, parallel, watch, src, dest}`, `fs` (+115 more)
+- **108 isolated node(s):** `autoprefixer`, `beeper`, `cssnano`, `gscan`, `gulp` (+103 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -129,15 +112,15 @@ Nodes (7): navigation_layout, default, options, type, Logo in the middle, Logo o
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `config` connect `image_sizes` to `custom`, `package.json`?**
-  _High betweenness centrality (0.113) - this node is a cross-community bridge._
-- **Why does `custom` connect `custom` to `image_sizes`, `navigation_layout`, `post_feed_layout`?**
-  _High betweenness centrality (0.108) - this node is a cross-community bridge._
+  _High betweenness centrality (0.131) - this node is a cross-community bridge._
+- **Why does `custom` connect `custom` to `image_sizes`, `header_section_layout`, `post_feed_layout`?**
+  _High betweenness centrality (0.125) - this node is a cross-community bridge._
 - **Why does `devDependencies` connect `devDependencies` to `package.json`?**
-  _High betweenness centrality (0.092) - this node is a cross-community bridge._
-- **Are the 8 inferred relationships involving `s()` (e.g. with `.addToParallaxList()` and `i()`) actually correct?**
-  _`s()` has 8 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `$schema`, `.opencode/plugins/graphify.js`, `@opencode-ai/plugin` to the rest of the system?**
-  _120 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.106) - this node is a cross-community bridge._
+- **Are the 7 inferred relationships involving `s()` (e.g. with `.addToParallaxList()` and `i()`) actually correct?**
+  _`s()` has 7 INFERRED edges - model-reasoned connections that need verification._
+- **What connects `autoprefixer`, `beeper`, `cssnano` to the rest of the system?**
+  _108 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `devDependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._
 - **Should `gulpfile.js` be split into smaller, more focused modules?**

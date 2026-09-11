@@ -1,7 +1,7 @@
 {
   "assets/built/main.min.js": {
-    "mtime": 1789108792.481642,
-    "seen": 1789108811.6678727,
+    "mtime": 1789012810.892972,
+    "seen": 1789102376.6673791,
     "ast_hash": "ba3c57bbe157b65c4f7eb14290ea5a4b",
     "semantic_hash": "ba3c57bbe157b65c4f7eb14290ea5a4b"
   },
@@ -18,14 +18,14 @@
     "semantic_hash": "2826705c49222db6a287bc77c38b2f11"
   },
   "gulpfile.js": {
-    "mtime": 1789108189.0205576,
-    "seen": 1789108811.6678727,
-    "ast_hash": "e9ad079acf366747282e830fd44873d7",
-    "semantic_hash": ""
+    "mtime": 1788972575.6849346,
+    "seen": 1788973581.7809613,
+    "ast_hash": "80c542193376ee1451bb515ce6bcf856",
+    "semantic_hash": "80c542193376ee1451bb515ce6bcf856"
   },
   "locales/context.json": {
-    "mtime": 1789108792.4853604,
-    "seen": 1789108811.6678727,
+    "mtime": 1789012810.9049518,
+    "seen": 1789102376.6673791,
     "ast_hash": "78ac2de4aa97b607808360d3a064d148",
     "semantic_hash": "78ac2de4aa97b607808360d3a064d148"
   },
@@ -42,8 +42,8 @@
     "semantic_hash": "c173ac8c95d84a6ffc79a481c26939ab"
   },
   "locales/en.json": {
-    "mtime": 1789108792.4853604,
-    "seen": 1789108811.6678727,
+    "mtime": 1789012810.906961,
+    "seen": 1789102376.6673791,
     "ast_hash": "47c0bab4a636d8a6683dabc5a7f9e524",
     "semantic_hash": "47c0bab4a636d8a6683dabc5a7f9e524"
   },
@@ -148,53 +148,5 @@
     "seen": 1789102376.6673791,
     "ast_hash": "b33d000860642c6f4907a877e0387a21",
     "semantic_hash": "b33d000860642c6f4907a877e0387a21"
-  },
-  ".github/workflows/test.yml": {
-    "mtime": 1788972575.4656062,
-    "seen": 1789108811.6678727,
-    "ast_hash": "98bb38503d63756de22c99f8723810c3",
-    "semantic_hash": ""
-  },
-  "AGENTS.md": {
-    "mtime": 1788980754.2512424,
-    "seen": 1789108811.6678727,
-    "ast_hash": "5764a0e8bed74cf76f9c1b21fed77aa3",
-    "semantic_hash": ""
-  },
-  "MODIFICATIONS.md": {
-    "mtime": 1789049016.997533,
-    "seen": 1789108811.6678727,
-    "ast_hash": "fa8c64d940f0d2ca66ba1df1f691ef17",
-    "semantic_hash": ""
-  },
-  "README.md": {
-    "mtime": 1789048747.149475,
-    "seen": 1789108811.6678727,
-    "ast_hash": "68049d72777571d8ce0e3084a84a9014",
-    "semantic_hash": ""
-  },
-  "ghost-config/routes.yaml": {
-    "mtime": 1789107399.0438006,
-    "seen": 1789108811.6678727,
-    "ast_hash": "8400f572d747a4ed6aa3006a4bc07142",
-    "semantic_hash": ""
-  },
-  "assets/images/default-skin.png": {
-    "mtime": 1788972575.6287487,
-    "seen": 1789108811.6678727,
-    "ast_hash": "e3f799c6dec9af194c86decdf7392405",
-    "semantic_hash": ""
-  },
-  "assets/images/default-skin.svg": {
-    "mtime": 1788972575.6363368,
-    "seen": 1789108811.6678727,
-    "ast_hash": "b257fa9c5ac8c515ac4d77a667ce2943",
-    "semantic_hash": ""
-  },
-  "assets/images/preloader.gif": {
-    "mtime": 1788972575.6436574,
-    "seen": 1789108811.6678727,
-    "ast_hash": "e34aafbb485a96eaf2a789b2bf3af6fe",
-    "semantic_hash": ""
   }
 }
