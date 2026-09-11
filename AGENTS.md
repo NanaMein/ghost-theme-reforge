@@ -1,9 +1,9 @@
-# Solo theme (Ghost) — OpenCode agent notes
+# alforpolio theme (Ghost) — OpenCode agent notes
 
 ## Commands (bun only)
 - Use bun for all package/script operations: `bun install`, `bun run dev`, `bun run test`, `bun run zip` (ignore README’s pnpm wording and `package.json#packageManager`; this repo is already using `bun.lock`).
 - `bun run dev` runs Gulp’s default task: builds CSS/JS/locales, starts livereload, and watches `*.hbs`, `partials/**/*.hbs`, `assets/css/**/*.css`, `assets/js/**/*.js`, and `locales-local/**/*.json`.
-- `bun run zip` runs the full build and then creates `dist/solo.zip` (zip filename is `package.json#name + ".zip"`).
+- `bun run zip` runs the full build and then creates `dist/alforpolio.zip` (zip filename is `package.json#name + ".zip"`).
 - `bun run test` runs `gscan .`; run it after changing theme files to catch structural/packaging issues.
 
 ## Build inputs/outputs (don’t edit generated files)
