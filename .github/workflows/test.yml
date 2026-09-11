@@ -16,21 +16,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
-        with:
-          persist-credentials: false
+      - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6
+      - uses: oven-sh/setup-bun@v2
 
-      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
-        with:
-          node-version: 24
+      - run: bun install
 
-      - run: pnpm install --no-frozen-lockfile
+      - run: bun run zip
 
-      - run: pnpm zip
-
-      - run: pnpm exec gscan --fatal --verbose .
+      - run: bunx gscan --fatal --verbose .
 
   required-checks-pass:
     name: Required checks pass
