@@ -88,11 +88,13 @@ function zipper(done) {
             '**',
             '!node_modules', '!node_modules/**',
             '!dist', '!dist/**',
+            '!ghost-config', '!ghost-config/**',
             '!pnpm-debug.log',
             '!pnpm-lock.yaml',
             '!pnpm-workspace.yaml',
             '!AGENTS.md',
             '!CLAUDE.md',
+            '!graphify-out', '!graphify-out/**'
         ], {encoding: false}),
         zip(filename),
         dest('dist/')

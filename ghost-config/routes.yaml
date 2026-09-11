@@ -1,0 +1,29 @@
+# =============================================================
+# Ghost routes.yaml — AlfyCodes
+# =============================================================
+# This file is NOT shipped in the theme zip.
+# Apply via: Ghost Admin → Settings → Labs → Routes
+#   or copy to your Docker volume: content/routes.yaml
+# Then restart Ghost.
+# =============================================================
+
+routes:
+  /:
+    template: homepage
+
+  /projects/:
+    template: page
+    data: page.featured-projects
+
+collections:
+  /projects/:
+    permalink: /projects/{slug}/
+    template: index
+
+  /:
+    permalink: /{slug}/
+    template: index
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
