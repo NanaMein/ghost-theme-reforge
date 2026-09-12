@@ -1,6 +1,6 @@
 {
-  "name": "solo",
-  "description": "A Ghost theme",
+  "name": "alforpolio",
+  "description": "An extended Ghost theme for portfolio creators, technical writers, and developers — a Reforge fork of TryGhost/Solo.",
   "version": "1.0.0",
   "private": true,
   "engines": {
@@ -8,16 +8,16 @@
   },
   "license": "MIT",
   "author": {
-    "name": "Ghost Foundation",
-    "email": "hello@ghost.org",
-    "url": "https://ghost.org"
+    "name": "NanaMein",
+    "email": "alfycodes@outlook.com",
+    "url": "https://alfycodes.me"
   },
   "keywords": [
     "ghost",
     "theme",
     "ghost-theme"
   ],
-  "docs": "https://solo.ghost.io/about/",
+  "docs": "https://github.com/NanaMein/ghost-theme-reforge",
   "config": {
     "posts_per_page": 6,
     "image_sizes": {
@@ -44,7 +44,7 @@
     "custom": {
       "background_color": {
         "type": "color",
-        "default": "#ffffff"
+        "default": "#ffdab9"
       },
       "navigation_layout": {
         "type": "select",

@@ -1,6 +1,6 @@
-# Reforge - Modifications / Attribution
+# Alforpolio - Modifications / Attribution
 
-This repository ("Reforge") is a fork/derivative work based on the [**TryGhost/Solo**](https://github.com/TryGhost/Solo) theme.
+This repository ("Alforpolio") is a fork/derivative work based on the [**TryGhost/Solo**](https://github.com/TryGhost/Solo) theme.
 
 ## Original work
 
@@ -8,6 +8,6 @@ This repository ("Reforge") is a fork/derivative work based on the [**TryGhost/S
 
 ## Modifications / extensions
 
-- Nanamein — https://alfycodes.me (2026)
+- [Nanamein](https://github.com/NanaMein) — [AlfyCodes Website](https://alfycodes.me) @(2026)
 
 For the full license terms, see `LICENSE`.
