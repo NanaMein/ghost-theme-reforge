@@ -8,7 +8,8 @@
   },
   "license": "MIT",
   "author": {
-    "name": "Nanamein",
+    "name": "NanaMein",
+    "email": "alfycodes@outlook.com",
     "url": "https://alfycodes.me"
   },
   "keywords": [
@@ -16,7 +17,7 @@
     "theme",
     "ghost-theme"
   ],
-  "docs": "https://github.com/Nanamein/Solo_theme_codebase",
+  "docs": "https://github.com/NanaMein/ghost-theme-reforge",
   "config": {
     "posts_per_page": 6,
     "image_sizes": {
@@ -43,7 +44,7 @@
     "custom": {
       "background_color": {
         "type": "color",
-        "default": "#ffffff"
+        "default": "#ffdab9"
       },
       "navigation_layout": {
         "type": "select",
