@@ -138,13 +138,14 @@ hr {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 14px;
+    width: 36px;
+    height: 36px;
+    padding: 0;
     border-radius: 999px;
     border: 1px solid var(--color-border);
     background: transparent;
     color: inherit;
     cursor: pointer;
-    white-space: nowrap;
 }
 
 .gh-theme-toggle:hover {
