@@ -1,11 +1,11 @@
-# Reforge
+# Alforpolio
 
 > [!IMPORTANT]
-> Reforge is a fork/derivative of the official [TryGhost/Solo](https://github.com/TryGhost/Solo) theme for Ghost.
+> Alforpolio is a fork/derivative of the official [TryGhost/Solo](https://github.com/TryGhost/Solo) theme for Ghost.
 > 
 > This fork is maintained in this repository—please open issues and pull requests here.
 
-Reforge is an extendable Ghost theme for portfolio creators, technical writers, and developers.
+Alforpolio is an extendable Ghost theme for portfolio creators, technical writers, and developers.
 It’s designed to work for posts/pages (and future modules like news/update or podcast layouts) and includes theme settings + a built-in light/night mode toggle (dark mode).
 
 ## Live Demo

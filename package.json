@@ -1,6 +1,6 @@
 {
   "name": "alforpolio",
-  "description": "An extended Ghost theme for portfolio creators, technical writers, and developers — a Reforge fork of TryGhost/Solo.",
+  "description": "An extended Ghost theme for portfolio creators, technical writers, and developers — an Alforpolio fork of TryGhost/Solo.",
   "version": "1.0.0",
   "private": true,
   "engines": {
@@ -17,7 +17,7 @@
     "theme",
     "ghost-theme"
   ],
-  "docs": "https://github.com/NanaMein/ghost-theme-reforge",
+  "docs": "https://github.com/NanaMein/alforpolio",
   "config": {
     "posts_per_page": 6,
     "image_sizes": {
