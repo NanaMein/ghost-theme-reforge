@@ -66,9 +66,36 @@ function initParallax() {
 
     var root = document.documentElement;
 
-    // 1. Capture the original light theme values set by Ghost Admin
-    var lightBg = (getComputedStyle(root).getPropertyValue('--background-color') || '').trim() || '#ffffff';
-    var lightAccent = (getComputedStyle(root).getPropertyValue('--ghost-accent-color') || '').trim() || '#15171A';
+    // Capture original light theme values from the stylesheet (not computed)
+    // These are the values Ghost Admin set — we restore them when switching back to light
+    var lightBg = null;
+    var lightAccent = null;
+
+    function captureLightValues() {
+        // Read from the stylesheet's :root rule, not from computed style
+        // (computed style may already be overridden by night mode)
+        var sheets = document.styleSheets;
+        for (var i = 0; i < sheets.length; i++) {
+            try {
+                var rules = sheets[i].cssRules || sheets[i].rules;
+                for (var j = 0; j < rules.length; j++) {
+                    if (rules[j].selectorText === ':root') {
+                        var bg = rules[j].style.getPropertyValue('--background-color');
+                        if (bg && bg.trim()) lightBg = bg.trim();
+                        var accent = rules[j].style.getPropertyValue('--ghost-accent-color');
+                        if (accent && accent.trim()) lightAccent = accent.trim();
+                    }
+                }
+            } catch (e) {
+                // Cross-origin stylesheet, skip
+            }
+        }
+        // Fallback to hardcoded defaults if not found in stylesheet
+        if (!lightBg) lightBg = '#ffffff';
+        if (!lightAccent) lightAccent = '#15171A';
+    }
+
+    captureLightValues();
 
     // Helper function to calculate if text should be white or black on this background
     function normalizeHex(hex) {
@@ -110,6 +137,9 @@ function initParallax() {
         // Apply CSS custom variables directly to :root
         root.style.setProperty('--background-color', activeBg);
         root.style.setProperty('--ghost-accent-color', activeAccent);
+
+        // Toggle night-mode class on <html> for header/navbar overrides
+        root.classList.toggle('night-mode', isNight);
 
         // Adjust text contrast classes so headings and body copy remain readable
         updateTextContrast(activeBg);

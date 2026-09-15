@@ -109,7 +109,40 @@ hr {
 
 .gh-head {
     font-size: 1.6rem;
-    background-color: transparent;
+    background-color: var(--background-color);
+    position: relative;
+    z-index: 100;
+}
+
+/* Override transparent header from shared theme — always solid */
+.is-head-transparent .gh-head {
+    position: relative;
+    background-color: var(--background-color);
+}
+
+.is-head-transparent .gh-head-logo,
+.is-head-transparent .gh-head-logo a,
+.is-head-transparent .gh-head .nav > li a,
+.is-head-transparent .gh-head-description,
+.is-head-transparent .gh-search,
+.is-head-transparent .nav-more-toggle,
+.is-head-transparent .gh-head-link {
+    color: var(--color-darker-gray);
+}
+
+.is-head-transparent .gh-burger::before,
+.is-head-transparent .gh-burger::after {
+    background-color: var(--color-darker-gray);
+}
+
+.is-head-transparent .gh-head-btn {
+    color: var(--color-darker-gray);
+    background-color: var(--color-white);
+}
+
+.is-head-transparent .gh-head-menu::before,
+.is-head-transparent .gh-head-menu::after {
+    background-color: var(--color-border);
 }
 
 .gh-head-logo {
@@ -138,22 +171,69 @@ hr {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 14px;
+    width: 36px;
+    height: 36px;
+    padding: 0;
     border-radius: 999px;
     border: 1px solid var(--color-border);
     background: transparent;
     color: inherit;
     cursor: pointer;
-    white-space: nowrap;
 }
 
 .gh-theme-toggle:hover {
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
 .gh-theme-toggle:focus-visible {
     outline: 2px solid var(--color-border);
     outline-offset: 3px;
+}
+
+.gh-theme-toggle .icon-moon {
+    display: none;
+}
+
+.gh-theme-toggle[data-theme-mode="night"] .icon-sun {
+    display: none;
+}
+
+.gh-theme-toggle[data-theme-mode="night"] .icon-moon {
+    display: block;
+}
+
+/* Night mode header overrides */
+html.night-mode {
+    --color-white: var(--background-color);
+}
+
+html.night-mode .gh-head,
+html.night-mode .is-head-open #gh-head {
+    background-color: var(--background-color) !important;
+}
+
+html.night-mode .gh-head-logo,
+html.night-mode .gh-head-logo a,
+html.night-mode .gh-head .nav > li a,
+html.night-mode .gh-head-description,
+html.night-mode .gh-search,
+html.night-mode .nav-more-toggle,
+html.night-mode .gh-head-link {
+    color: var(--color-darker-gray);
+}
+
+html.night-mode .gh-burger::before,
+html.night-mode .gh-burger::after {
+    background-color: var(--color-darker-gray);
+}
+
+html.night-mode .gh-head-menu::before,
+html.night-mode .gh-head-menu::after {
+    background-color: var(--color-border);
+}
+
+html.night-mode .is-head-open #gh-head .gh-head-actions {
+    background-color: var(--background-color) !important;
 }
 
 @media (max-width: 991px) {
